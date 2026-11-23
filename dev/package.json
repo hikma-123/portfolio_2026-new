@@ -1,0 +1,10 @@
+{
+  "name": "hikma-portfolio",
+  "private": true,
+  "description": "Only needed if you change Tailwind classes in index.html. Run from the dev folder: npm install, then npm run build",
+  "scripts": {
+    "build": "cd .. && npx tailwindcss -c dev/tailwind.config.js -i dev/tailwind.input.css -o css/tailwind.css --minify",
+    "watch": "cd .. && npx tailwindcss -c dev/tailwind.config.js -i dev/tailwind.input.css -o css/tailwind.css --watch"
+  },
+  "devDependencies": { "tailwindcss": "^3.4.0" }
+}
